@@ -16,7 +16,6 @@ try:
 except Exception as e:
     print(e)
     quit()
-#URL = f"https://api.openweathermap.org/data/2.5/weather?lat={result[0]}&lon={result[1]}&appid={API_KEY}"
 URL = f"https://api.openweathermap.org/data/2.5/weather?q={paikkakunnan_nimi}&units=metric&appid={API_KEY}"
 test = requests.get(url=URL).json()
 main = test["main"]

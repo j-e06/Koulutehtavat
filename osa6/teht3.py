@@ -8,3 +8,4 @@ while True:
         print("Nähdään!")
         break
     print(usa_bensa(maara))
+

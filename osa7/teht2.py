@@ -3,7 +3,7 @@ while True:
     name = input("Name: ")
     if name == "":
         break
-    if name in names:
+    elif name in names:
         print("Existing name")
     else:
         names.add(name)
