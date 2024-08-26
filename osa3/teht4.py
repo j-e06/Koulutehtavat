@@ -1,5 +1,8 @@
-vuosi = float(input("Anna vuosia: "))
-if vuosi / 4 % 2 == 0:
-    #leap year
+from calendar import isleap
 
-    pass
+vuosi = int(input("Anna vuosia: "))
+
+if isleap(vuosi):
+    print("Vuosi on karkausvuosi!")
+else:
+    print("Vuosi ei ole karkausvuosi!")
